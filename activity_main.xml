@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dhi7VM" type="com.asapplication.app.modules.dhi7.data.viewmodel.Dhi7VM"/>
+    </data>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Added Time picker just to pick the alarm time-->
+    <!--gravity is aligned to center-->
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_gravity="center" />
+
+
+
+
+
+    <!--Added Toggle Button to set the alarm on or off-->
+    <!--ByDefault toggleButton is set to false-->
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:checked="false"
+        android:onClick="OnToggleClicked" />
+
+    <!--"OnToggleClicked" method will be implemented in MainActivity.java -->
+
+
+
+<!--    이 아래 부분은 요일 지정하는 부분. 이 부분을 알람 설정 부분에 추가하면 될 듯?? -->
+<!--
+    <TextView android:ellipsize="end"
+        android:id="@+id/txtThirtyTwo"
+        android:layout_gravity="start"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15pxh"
+        android:layout_marginStart="@dimen/_15pxh"
+        android:layout_marginTop="@dimen/_12pxv"
+        android:layout_width="wrap_content"
+        android:lineSpacingExtra="@dimen/_8pxh"
+        android:singleLine="true"
+        android:text="@{dhi7VM.dhi7Model.txtThirtyTwo}"
+        style="@style/txtManropesemibold20" tools:text="@string/lbl25"/>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearRowthirtythree"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_9pxh"
+        android:layout_marginStart="@dimen/_12pxh"
+        android:layout_marginTop="@dimen/_8pxv"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylebluegray_901cornerRadius">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtThirtyThree"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_25pxv"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_27pxv"
+            android:layout_weight="0.14"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_5pxv"
+            android:singleLine="true"
+            android:text="@{dhi7VM.dhi7Model.txtThirtyThree}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl2"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtThirtyFour"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_25pxv"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_27pxv"
+            android:layout_weight="0.14"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_5pxv"
+            android:singleLine="true"
+            android:text="@{dhi7VM.dhi7Model.txtThirtyFour}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl4"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtThirtyFive"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_weight="0.14"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_6pxv"
+            android:singleLine="true"
+            android:text="@{dhi7VM.dhi7Model.txtThirtyFive}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl3"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtThirtySix"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_weight="0.14"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_6pxv"
+            android:singleLine="true"
+            android:text="@{dhi7VM.dhi7Model.txtThirtySix}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl5"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtThirtySeven"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_weight="0.14"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_6pxv"
+            android:singleLine="true"
+            android:text="@{dhi7VM.dhi7Model.txtThirtySeven}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl6"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtThirtyEight"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_weight="0.14"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_5pxv"
+            android:singleLine="true"
+            android:text="@{dhi7VM.dhi7Model.txtThirtyEight}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl26"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtThirtyNine"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_weight="0.14"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_5pxv"
+            android:singleLine="true"
+            android:text="@{dhi7VM.dhi7Model.txtThirtyNine}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl27"/>
+     -->
+
+</LinearLayout>
+</layout>
