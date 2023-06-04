@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dhi6VM" type="com.asapplication.app.modules.dhi6.data.viewmodel.Dhi6VM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnvideocamera"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_700">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_7pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearIPhoneXorne"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageVideocamera"
+                    android:layout_height="@dimen/_21pxh"
+                    android:layout_width="@dimen/_54pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_videocamera"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_videocamera"/>
+                <ImageView android:id="@+id/imageSignal"
+                    android:layout_height="@dimen/_11pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_218pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="@dimen/_66pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_signal"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_signal"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linearRowarrowleft"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylebluegray_901">
+            <ImageView android:id="@+id/imageArrowleft"
+                android:layout_height="@dimen/_19pxh"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="@dimen/_6pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowleft"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTwentySix"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_13pxv"
+                android:layout_marginStart="@dimen/_136pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_weight="0.56" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_9pxh"
+                android:singleLine="true"
+                android:text="@{dhi6VM.dhi6Model.txtTwentySix}"
+                style="@style/txtManropesemibold23_1" tools:text="@string/lbl22"/>
+            <ImageButton android:id="@+id/imageGrid"
+                android:layout_height="@dimen/_27pxh"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginEnd="@dimen/_11pxh"
+                android:layout_marginStart="@dimen/_119pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="@dimen/_27pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_grid"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_grid"
+                />
+<!--                android:onlick="@+id/linearColumnvideocamera"-->
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            itemSpace="@{@dimen/_38pxh}"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginBottom="@dimen/_454pxv"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="2"
+            tools:listitem="@layout/row_dhi_1" />
+    </LinearLayout>
+</layout>

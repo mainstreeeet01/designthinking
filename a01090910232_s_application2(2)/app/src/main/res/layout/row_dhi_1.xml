@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dhi1RowModel" type="com.asapplication.app.modules.dhi6.data.model.Dhi1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectangletwentysix"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylebluegray_902cornerRadius">
+        <View
+            android:background="@drawable/rectangle_bg_red_700_border_black_900_radius_tl_12_bl_12"
+            android:id="@+id/viewRectangleTwentySix"
+            android:layout_height="@dimen/_90pxh" android:layout_width="@dimen/_15pxh"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_weight="0.66" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_13pxh"
+            android:singleLine="true"
+            android:text="@{dhi1RowModel.txtLanguage}"
+            style="@style/txtManropesemibold35" tools:text="@string/lbl_3_18_7_00"/>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_red_600_border_red_701_radius_35"
+            android:id="@+id/btnClock"
+            android:layout_height="@dimen/_70pxh"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_43pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="@dimen/_70pxh"
+            android:paddingHorizontal="@dimen/_10pxh"
+            android:paddingVertical="@dimen/_10pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_clock" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</layout>

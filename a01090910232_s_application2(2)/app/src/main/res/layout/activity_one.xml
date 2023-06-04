@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linearOne"
+        style="@style/groupStylegray_700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtSixtyThree"
+            style="@style/txtManropesemibold39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_120pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/_15pxh"
+            android:singleLine="true"
+            android:text="@string/lbl17"
+            tools:text="@string/lbl17" />
+
+        <ImageView
+            android:id="@+id/imageFreeiconfist"
+            imageRes="@{@drawable/img_freeiconfist_441x360}"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_441pxv"
+            app:tint="@color/white"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:gravity="start"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_freeiconfist_441x360" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asapplication.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.asapplication.app.appcomponents.di.MyApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.asapplication.app.modules.dhi7.ui.Dhi7Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asapplication.app.modules.dhi9.ui.Dhi9Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asapplication.app.modules.dhi8.ui.Dhi8Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asapplication.app.modules.two.ui.TwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asapplication.app.modules.one.ui.OneActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.asapplication.app.modules.dhi11.ui.Dhi11Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asapplication.app.modules.dhi3.ui.Dhi3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asapplication.app.modules.dhi2.ui.Dhi2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asapplication.app.modules.dhi10.ui.Dhi10Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asapplication.app.modules.dhi6.ui.Dhi6Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asapplication.app.modules.dhi4.ui.Dhi4Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asapplication.app.modules.MainActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

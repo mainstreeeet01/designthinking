@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/linearTwo"
+        style="@style/txtManropesemibold39"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn"
+            style="@style/btnSolid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_9pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_11pxv"
+            android:singleLine="true"
+            android:text="@string/lbl18"
+            android:textAllCaps="false"
+            tools:text="@string/lbl18" />
+
+        <LinearLayout
+            android:id="@+id/linearColumncomputer"
+            style="@style/groupStylebluegray_901cornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageComputer"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_99pxh"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="@dimen/_99pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_computer_white_a700"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_computer_white_a700" />
+
+            <TextView
+                android:id="@+id/txtTwentyThree"
+                style="@style/txtManropesemibold23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_99pxh"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/_99pxh"
+                android:layout_marginBottom="30dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_9pxh"
+                android:singleLine="true"
+                android:text="@string/lbl19"
+                tools:text="@string/lbl19" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearColumnvector"
+            style="@style/groupStylebluegray_901cornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageVector"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_109pxh"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="@dimen/_109pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vector_white_a700"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_vector_white_a700" />
+
+            <TextView
+                android:id="@+id/txtTwentyFour"
+                style="@style/txtManropesemibold23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_109pxh"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/_109pxh"
+                android:layout_marginBottom="30dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_9pxh"
+                android:singleLine="true"
+                android:text="@string/lbl20"
+                tools:text="@string/lbl20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearColumncalendar"
+            style="@style/groupStylebluegray_901cornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginBottom="@dimen/_22pxv"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageCalendar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_111pxh"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="@dimen/_111pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_calendar"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_calendar" />
+
+            <TextView
+                android:id="@+id/txtTwentyFive"
+                style="@style/txtManropesemibold23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_111pxh"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/_111pxh"
+                android:layout_marginBottom="30dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_9pxh"
+                android:singleLine="true"
+                android:text="@string/lbl21"
+                tools:text="@string/lbl21" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

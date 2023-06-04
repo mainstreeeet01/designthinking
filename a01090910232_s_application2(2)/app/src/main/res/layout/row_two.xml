@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linearRowbork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearCard1"
+            style="@style/groupStylegray_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageBork"
+                imageRes="@{@drawable/img_bork}"
+                android:layout_width="@dimen/_77pxh"
+                android:layout_height="@dimen/_78pxh"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_bork" />
+
+            <TextView
+                android:id="@+id/txtBorkV530"
+                style="@style/txtManropesemibold17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_7pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_bork_v530"
+                tools:text="@string/lbl_bork_v530" />
+
+            <TextView
+                android:id="@+id/txtVacuumcleaner"
+                style="@style/txtManropemedium12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginBottom="@dimen/_22pxv"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="@string/lbl_vacuum_cleaner"
+                tools:text="@string/lbl_vacuum_cleaner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCard2"
+            style="@style/groupStylegray_901cornerRadius"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frameStack"
+                android:layout_width="@dimen/_39pxh"
+                android:layout_height="@dimen/_78pxv"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_marginEnd="@dimen/_29pxh">
+
+                <ImageView
+                    android:id="@+id/imageImageNine"
+                    android:layout_width="@dimen/_39pxh"
+                    android:layout_height="@dimen/_78pxh"
+                    android:layout_gravity="start"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_image9"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_image9" />
+
+                <ImageView
+                    android:id="@+id/imageImageTen"
+                    android:layout_width="@dimen/_39pxh"
+                    android:layout_height="@dimen/_15pxh"
+                    android:layout_gravity="top|start"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_image10"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_image10" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtLIFXLEDLight"
+                style="@style/txtManropesemibold17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="@dimen/_7pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_lifx_led_light"
+                tools:text="@string/lbl_lifx_led_light" />
+
+            <TextView
+                android:id="@+id/txtSmartbulb"
+                style="@style/txtManropemedium12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginBottom="@dimen/_22pxv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lbl_smart_bulb"
+                tools:text="@string/lbl_smart_bulb" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

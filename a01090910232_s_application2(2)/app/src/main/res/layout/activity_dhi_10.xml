@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dhi10VM" type="com.asapplication.app.modules.dhi10.data.viewmodel.Dhi10VM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnvideocamera"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_700">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_7pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearIPhoneXorne"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageVideocamera"
+                    android:layout_height="@dimen/_21pxh"
+                    android:layout_width="@dimen/_54pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_videocamera"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_videocamera"/>
+                <ImageView android:id="@+id/imageSignal"
+                    android:layout_height="@dimen/_11pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_218pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="@dimen/_66pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_signal"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_signal"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowarrowleft"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylebluegray_901">
+            <ImageView android:id="@+id/imageArrowleft"
+                android:layout_height="@dimen/_19pxh"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="@dimen/_6pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowleft"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFiftyNine"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_136pxh"
+                android:layout_marginStart="@dimen/_112pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_weight="0.93" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_9pxh"
+                android:singleLine="true"
+                android:text="@{dhi10VM.dhi10Model.txtFiftyNine}"
+                style="@style/txtManropesemibold23" tools:text="@string/lbl31"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameStacksixty"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_504pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_width="@dimen/_330pxh" style="@style/groupStylewhite_A700cornerRadius">
+            <ImageView android:id="@+id/imageSixty"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_12pxh}"
+                imageRes="@{@drawable/img__2}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img__2"/>
+            <ImageView android:id="@+id/imageLocation"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_45pxh"
+                android:layout_marginHorizontal="@dimen/_40pxh"
+                android:layout_marginVertical="@dimen/_40pxv"
+                android:layout_width="@dimen/_32pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_location"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_location"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btn" android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_27pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_9pxh"
+            android:paddingBottom="@dimen/_23pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_23pxv" android:singleLine="true"
+            android:text="@string/lbl28" android:textAllCaps="false"
+            style="@style/btnSolidRounded_1" tools:text="@string/lbl28"/>
+    </LinearLayout>
+</layout>

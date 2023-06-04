@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">a01090910232_s_application2</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="msg">팝업창이나 텍스트
+해당 목적지 까지 ~km로
+대략 ~시간(분) 걸립니다.</string>
+<string name="lbl_62">6</string>
+<string name="lbl_22">2</string>
+<string name="lbl4">화</string>
+<string name="lbl5">목</string>
+<string name="lbl2">월</string>
+<string name="lbl3">수</string>
+<string name="lbl_266">디자인적사고
+전266</string>
+<string name="lbl_102">운영체제전102</string>
+<string name="lbl_3_new_devices">3 new devices</string>
+<string name="lbl_humidifier">Humidifier</string>
+<string name="lbl_vacuum_cleaner">Vacuum cleaner</string>
+<string name="lbl_lifx_led_light">LIFX LED Light</string>
+<string name="lbl_52">5</string>
+<string name="lbl_12">12</string>
+<string name="lbl_10">10</string>
+<string name="lbl_11">11</string>
+<string name="lbl_select_manually">Select manually</string>
+<string name="lbl30">현재 위치</string>
+<string name="lbl_add_device">Add device</string>
+<string name="lbl31">도착 위치</string>
+<string name="lbl32">예상 소요 시간</string>
+<string name="lbl_smart_bulb">Smart bulb</string>
+<string name="lbl">시간표</string>
+<string name="lbl_humidifier_air">Humidifier\u2028Air</string>
+<string name="lbl_xiaomi_dem_f600">Xiaomi DEM-F600</string>
+<string name="lbl_floor_lamp">Floor lamp</string>
+<string name="lbl_42">4</string>
+<string name="lbl_search">Search</string>
+<string name="lbl_0">0</string>
+<string name="lbl_1">1</string>
+<string name="lbl_bork_v530">Bork V530</string>
+<string name="lbl_wifi_tw1r">Wifi:tw1r</string>
+<string name="msg_not_found_devic">Not found\u2028device?</string>
+<string name="lbl_9">9</string>
+<string name="lbl20">알람 맞추기</string>
+<string name="lbl21">시간표 설정</string>
+<string name="lbl22">알람</string>
+<string name="lbl_mode_2">Mode 2</string>
+<string name="lbl23">알람 추가</string>
+<string name="lbl24">알람시간</string>
+<string name="lbl25">알람 반복</string>
+<string name="lbl26">토</string>
+<string name="lbl27">일</string>
+<string name="lbl28">위치 지정</string>
+<string name="lbl29">알람 변경</string>
+<string name="msg_wifi_tw1r_413_7">Wifi:tw1r_413_7G</string>
+<string name="lbl_413_7g">_413_7G</string>
+<string name="lbl_3_18_7_00">3/18   7:00</string>
+<string name="lbl_bedroom">Bedroom</string>
+<string name="lbl_32">3</string>
+<string name="lbl_36">36%</string>
+<string name="lbl8">저장</string>
+<string name="lbl9">요일</string>
+<string name="lbl6">금</string>
+<string name="lbl7">시간표 입력</string>
+<string name="lbl10">시작</string>
+<string name="lbl11">종료</string>
+<string name="lbl12">오전</string>
+<string name="lbl13">오후</string>
+<string name="lbl14">제목</string>
+<string name="lbl15">장소</string>
+<string name="lbl16">색상</string>
+<string name="lbl_main_light">Main light</string>
+<string name="lbl17">묵플리케이션</string>
+<string name="lbl18">기능선택</string>
+<string name="lbl19">등교 거리 계산</string>
+</resources>

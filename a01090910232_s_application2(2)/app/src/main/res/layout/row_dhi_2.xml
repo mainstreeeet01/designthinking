@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dhi2RowModel" type="com.asapplication.app.modules.dhi7.data.model.Dhi2RowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnzero"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <TextView android:ellipsize="end" android:id="@+id/txtZero"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:singleLine="true"
+            android:text="@{dhi2RowModel.txtZero}"
+            style="@style/txtManropesemibold20" tools:text="@string/lbl_0"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtZeroOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:singleLine="true"
+            android:text="@{dhi2RowModel.txtZeroOne}"
+            style="@style/txtManropesemibold20" tools:text="@string/lbl_1"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtZeroTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_1pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:singleLine="true"
+            android:text="@{dhi2RowModel.txtZeroTwo}"
+            style="@style/txtManropesemibold20" tools:text="@string/lbl_22"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtZeroThree"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_1pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:singleLine="true"
+            android:text="@{dhi2RowModel.txtZeroThree}"
+            style="@style/txtManropesemibold20" tools:text="@string/lbl_32"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtZeroFour"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:singleLine="true"
+            android:text="@{dhi2RowModel.txtZeroFour}"
+            style="@style/txtManropesemibold20" tools:text="@string/lbl_42"/>
+    </LinearLayout>
+</layout>
