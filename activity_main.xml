@@ -5,8 +5,9 @@
         <variable name="dhi7VM" type="com.asapplication.app.modules.dhi7.data.viewmodel.Dhi7VM"/>
     </data>
 
+
 <LinearLayout
-    
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -16,7 +17,7 @@
     <TimePicker
         android:id="@+id/timePicker"
         android:layout_width="wrap_content"
-        android:layout_height="400dp"
+        android:layout_height="450dp"
         android:layout_gravity="center" />
 
 
@@ -25,7 +26,7 @@
 
     <!--Added Toggle Button to set the alarm on or off-->
     <!--ByDefault toggleButton is set to false-->
-<!--    <ToggleButton
+    <ToggleButton
         android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,25 +34,10 @@
         android:layout_margin="20dp"
         android:checked="false"
         android:onClick="OnToggleClicked" />
--->
+
     <!--"OnToggleClicked" method will be implemented in MainActivity.java -->
 
-    <FrameLayout android:id="@+id/frameStackfortyone"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="@dimen/_324pxv"
-        android:layout_marginEnd="@dimen/_12pxh"
-        android:layout_marginStart="@dimen/_12pxh"
-        android:layout_marginTop="@dimen/_11pxv"
-        android:layout_width="@dimen/_320pxh" style="@style/groupStylewhite_A700cornerRadius">
-        <ImageView android:id="@+id/imageFortyOne"
-            android:layout_gravity="start"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:scaleType="fitXY"
-            cornerRadius="@{@dimen/_12pxh}"
-            imageRes="@{@drawable/img_}"
-            tools:ignore="ContentDescription" tools:src="@drawable/img_"/>
-    </FrameLayout>
+
 
 <!--    이 아래 부분은 요일 지정하는 부분. 이 부분을 알람 설정 부분에 추가하면 될 듯?? -->
 <!--
