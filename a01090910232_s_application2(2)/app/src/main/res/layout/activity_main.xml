@@ -36,13 +36,14 @@
 -->
     <!--"OnToggleClicked" method will be implemented in MainActivity.java -->
 
+<!--
     <FrameLayout android:id="@+id/frameStackfortyone"
         android:layout_gravity="center_horizontal"
-        android:layout_height="@dimen/_324pxv"
+        android:layout_height="@dimen/_274pxv"
         android:layout_marginEnd="@dimen/_12pxh"
         android:layout_marginStart="@dimen/_12pxh"
         android:layout_marginTop="@dimen/_11pxv"
-        android:layout_width="@dimen/_320pxh" style="@style/groupStylewhite_A700cornerRadius">
+        android:layout_width="@dimen/_300pxh" style="@style/groupStylewhite_A700cornerRadius">
         <ImageView android:id="@+id/imageFortyOne"
             android:layout_gravity="start"
             android:layout_height="match_parent"
@@ -52,21 +53,27 @@
             imageRes="@{@drawable/img_}"
             tools:ignore="ContentDescription" tools:src="@drawable/img_"/>
     </FrameLayout>
+-->
 
-<!--    이 아래 부분은 요일 지정하는 부분. 이 부분을 알람 설정 부분에 추가하면 될 듯?? -->
 <!--
-    <TextView android:ellipsize="end"
-        android:id="@+id/txtThirtyTwo"
-        android:layout_gravity="start"
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_15pxh"
-        android:layout_marginStart="@dimen/_15pxh"
-        android:layout_marginTop="@dimen/_12pxv"
+        android:text="set Alarm( Date )"
+        android:textAllCaps="false"
+        android:onClick="clickBtn4"/>
+-->
+
+<!--    <ToggleButton
+        android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
-        android:lineSpacingExtra="@dimen/_8pxh"
-        android:singleLine="true"
-        android:text="@{dhi7VM.dhi7Model.txtThirtyTwo}"
-        style="@style/txtManropesemibold20" tools:text="@string/lbl25"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:checked="false"
+        android:onClick="OnToggleClicked" />
+-->
+
     <LinearLayout android:gravity="start"
         android:id="@+id/linearRowthirtythree"
         android:layout_height="wrap_content"
@@ -74,7 +81,7 @@
         android:layout_marginStart="@dimen/_12pxh"
         android:layout_marginTop="@dimen/_8pxv"
         android:layout_width="match_parent"
-        android:orientation="horizontal" style="@style/groupStylebluegray_901cornerRadius">
+        android:orientation="horizontal" >
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtyThree"
             android:layout_height="wrap_content"
@@ -88,8 +95,11 @@
             android:paddingStart="@dimen/_9pxh"
             android:paddingTop="@dimen/_5pxv"
             android:singleLine="true"
+
             android:text="@{dhi7VM.dhi7Model.txtThirtyThree}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl2"/>
+            style="@style/txtSolidRounded_1" tools:text="월"
+            android:background="#90f7f7f7"
+            android:textColor="#000000"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtyFour"
             android:layout_height="wrap_content"
@@ -104,7 +114,9 @@
             android:paddingTop="@dimen/_5pxv"
             android:singleLine="true"
             android:text="@{dhi7VM.dhi7Model.txtThirtyFour}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl4"/>
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl4"
+            android:background="#90f7f7f7"
+            android:textColor="#000000"/>/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtyFive"
             android:layout_height="wrap_content"
@@ -119,7 +131,9 @@
             android:paddingTop="@dimen/_6pxv"
             android:singleLine="true"
             android:text="@{dhi7VM.dhi7Model.txtThirtyFive}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl3"/>
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl3"
+            android:background="#90f7f7f7"
+            android:textColor="#000000"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtySix"
             android:layout_height="wrap_content"
@@ -134,7 +148,9 @@
             android:paddingTop="@dimen/_6pxv"
             android:singleLine="true"
             android:text="@{dhi7VM.dhi7Model.txtThirtySix}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl5"/>
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl5"
+            android:background="#90f7f7f7"
+            android:textColor="#000000"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtySeven"
             android:layout_height="wrap_content"
@@ -149,7 +165,9 @@
             android:paddingTop="@dimen/_6pxv"
             android:singleLine="true"
             android:text="@{dhi7VM.dhi7Model.txtThirtySeven}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl6"/>
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl6"
+            android:background="#90f7f7f7"
+            android:textColor="#000000"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtyEight"
             android:layout_height="wrap_content"
@@ -164,7 +182,9 @@
             android:paddingTop="@dimen/_5pxv"
             android:singleLine="true"
             android:text="@{dhi7VM.dhi7Model.txtThirtyEight}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl26"/>
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl26"
+            android:background="#90f7f7f7"
+            android:textColor="#000000"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtyNine"
             android:layout_height="wrap_content"
@@ -180,8 +200,12 @@
             android:paddingTop="@dimen/_5pxv"
             android:singleLine="true"
             android:text="@{dhi7VM.dhi7Model.txtThirtyNine}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl27"/>
-     -->
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl27"
+            android:background="#90f7f7f7"
+            android:textColor="#000000"/>
+    </LinearLayout>
+<!--    위 부분은 요일 지정하는 부분. 이 부분을 알람 설정 부분에 추가하면 될 듯?? -->
+
 
 </LinearLayout>
 </layout>

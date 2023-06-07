@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         alarmTimePicker = findViewById<View>(R.id.timePicker) as TimePicker
         alarmManager = getSystemService(ALARM_SERVICE) as AlarmManager
+
+//        "@+id/imageArrowleft".setColorFilter(Color.parseColor("#55ff0000"))
     }
 
     // OnToggleClicked() method is implemented the time functionality
@@ -54,4 +56,5 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, "ALARM OFF", Toast.LENGTH_SHORT).show()
         }
     }
+
 }
