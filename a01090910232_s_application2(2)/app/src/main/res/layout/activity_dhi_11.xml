@@ -88,22 +88,53 @@
 
         <LinearLayout android:id="@+id/linearBus"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_11pxv"
+        android:layout_marginTop="@dimen/_31pxv"
         android:layout_width="wrap_content"
-        android:orientation="horizontal" style="@style/groupStylebluegray_901">
+        android:orientation="horizontal" style="@style/groupStylebluegray_901" android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/txtSixtyThree"
+                style="@style/txtManropesemibold23"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40pxh"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_marginEnd="@dimen/_13pxh"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:text="현재 버스 정류장 상황" />
+
+            </LinearLayout>
+
+
 
         <TextView android:gravity="center_horizontal"
-            android:id="@+id/txtSixtyThree"
+            android:id="@+id/txtSixtyFour"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_20pxv"
             android:layout_marginEnd="@dimen/_13pxh"
             android:layout_marginStart="@dimen/_13pxh"
-            android:layout_marginTop="@dimen/_33pxv"
+            android:layout_marginTop="@dimen/_24pxv"
             android:layout_width="match_parent"
             android:lineSpacingExtra="@dimen/_1pxh"
-            android:text="@{dhi11VM.dhi11Model.txtSixtyTwo}"
-            style="@style/txtManropesemibold23" tools:text="현재 학교의 버스 정류장 상황은 다음과 같습니다."/>
+            tools:text="출발\n사색의 광장: 인원수 적음\n체육대학 앞: 인원수 보통\n정문: 인원수 많음"
+            style="@style/txtManropesemibold23" />
 
-        </LinearLayout>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtSixtyFive"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            tools:text="도착\n정문: 인원수 많음\n체육대학 앞: 인원수 보통"
+            style="@style/txtManropesemibold23" />
+
+
+
     </LinearLayout>
 </layout>
