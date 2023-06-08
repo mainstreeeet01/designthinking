@@ -76,87 +76,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, "ALARM OFF", Toast.LENGTH_SHORT).show()
         }
 
-        val alarmUp = PendingIntent.getBroadcast(
-            this, 0,
-            Intent("com.my.package.MY_UNIQUE_ACTION"),
-            PendingIntent.FLAG_NO_CREATE
-        ) != null
 
-        if (alarmUp) {
-            Log.d("myTag", "Alarm is already active")
-        }
     }
-
-    /*
-     //멤버변수
-     var Year = 0
-     var Month = 0
-     var Day = 0
-     var Hour = 0
-     var Min = 0
-     fun clickBtn4(view: View?) {
- //특정 날짜에 알람 설정하기
-
- //날짜선택 다이얼로그 보이기
-         val calendar = GregorianCalendar(Locale.KOREA)
-         val dialog = DatePickerDialog(
-             this, onDateSetListener,
-             calendar[Calendar.YEAR], calendar[Calendar.MONTH], calendar[Calendar.DAY_OF_MONTH]
-         )
-         dialog.show()
-     }
-
-     //날짜선택 리스너
-     var onDateSetListener =
-         OnDateSetListener { datePicker, year, month, day -> //Toast.makeText(MainActivity.this, year+","+(month+1)+","+day+"", Toast.LENGTH_SHORT).show();
-
-             //선택한 날짜 저장
-             Year = year
-             Month = month
-             Day = day
-
-                         //시간 선택 다이얼로그 보이기
-                         val calendar = GregorianCalendar(Locale.KOREA)
-                         val dialog = TimePickerDialog(
-                             this@MainActivity, timeSetListener,
-                             calendar[Calendar.HOUR_OF_DAY], calendar[Calendar.MINUTE], true
-                         )
-                         dialog.show()
-                     }
-
-
-                         //시간 선택 리스너
-                 private val timeSetListener = TimePickerDialog.OnTimeSetListener { _, hour, minute ->
-                         Hour = hour
-                         Min = minute
-
-                         //선택한 날짜와 시간으로 알람 설정
-                         val calendar = GregorianCalendar(Year, Month, Day, Hour, Min)
-
-                         //알람시간에 AlarmActivity 실행되도록.
-                         val intent = Intent(this@MainActivity, AlarmActivity::class.java)
-                         val pendingIntent = PendingIntent.getActivity(
-                             this@MainActivity,
-                             30,
-                             intent,
-                             PendingIntent.FLAG_UPDATE_CURRENT
-                         )
-                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                             alarmManager!!.setExactAndAllowWhileIdle(
-                                 AlarmManager.RTC_WAKEUP,
-                                 calendar.timeInMillis,
-                                 pendingIntent
-                             )
-                         } else {
-                             alarmManager!!.setExact(
-                                 AlarmManager.RTC_WAKEUP,
-                                 calendar.timeInMillis,
-                                 pendingIntent
-                             )
-                         }
-                         */
-
-
         }
 
 
