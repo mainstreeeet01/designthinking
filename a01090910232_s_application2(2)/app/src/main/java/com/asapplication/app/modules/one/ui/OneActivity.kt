@@ -14,6 +14,7 @@ class OneActivity : BaseActivity<ActivityOneBinding>(R.layout.activity_one) {
         lifecycleScope.launch {
             delay(2500)
             startActivity(Intent(this@OneActivity, TwoActivity::class.java))
+            finish()
         }
     }
 

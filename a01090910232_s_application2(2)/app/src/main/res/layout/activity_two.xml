@@ -8,8 +8,8 @@
 
 
     <LinearLayout
+        style="@style/groupStylegray_700"
         android:id="@+id/linearTwo"
-        style="@style/txtManropesemibold39"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="start"
