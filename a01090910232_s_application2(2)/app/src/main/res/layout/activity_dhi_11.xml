@@ -83,6 +83,27 @@
             android:layout_width="match_parent"
             android:lineSpacingExtra="@dimen/_1pxh"
             android:text="@{dhi11VM.dhi11Model.txtSixtyTwo}"
-            style="@style/txtManropesemibold23" tools:text="@string/msg"/>
+            style="@style/txtManropesemibold23" tools:text="해당 목적지까지 소요시간 계산 결과"/>
+
+
+        <LinearLayout android:id="@+id/linearBus"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_11pxv"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal" style="@style/groupStylebluegray_901">
+
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtSixtyThree"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_33pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:text="@{dhi11VM.dhi11Model.txtSixtyTwo}"
+            style="@style/txtManropesemibold23" tools:text="현재 학교의 버스 정류장 상황은 다음과 같습니다."/>
+
+        </LinearLayout>
     </LinearLayout>
 </layout>

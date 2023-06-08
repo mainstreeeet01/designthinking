@@ -7,8 +7,8 @@
 
 <LinearLayout
     
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <!--Added Time picker just to pick the alarm time-->
@@ -16,7 +16,7 @@
     <TimePicker
         android:id="@+id/timePicker"
         android:layout_width="wrap_content"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:layout_gravity="center" />
 
 
@@ -59,32 +59,27 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="set Alarm( Date )"
+        android:text="요일을 설정하세요 "
         android:textAllCaps="false"
-        android:onClick="clickBtn4"/>
+        android:onClick="clickBtn4"
+        android:background="#FF03DAC5"/>
 -->
 
-<!--    <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="15dp"
-        android:checked="false"
-        android:onClick="OnToggleClicked" />
--->
+
+
 
     <LinearLayout android:gravity="start"
         android:id="@+id/linearRowthirtythree"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_75pxh"
         android:layout_marginEnd="@dimen/_9pxh"
         android:layout_marginStart="@dimen/_12pxh"
-        android:layout_marginTop="@dimen/_8pxv"
-        android:layout_width="match_parent"
-        android:orientation="horizontal" style="@style/groupStylebluegray_901cornerRadius">
+        android:layout_marginTop="@dimen/_1pxv"
+        android:layout_width="@dimen/_480pxv"
+        android:orientation="horizontal" >
+
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtyThree"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_35pxh"
             android:layout_marginBottom="@dimen/_25pxv"
             android:layout_marginStart="@dimen/_17pxh"
             android:layout_marginTop="@dimen/_27pxv"
@@ -95,10 +90,9 @@
             android:paddingStart="@dimen/_9pxh"
             android:paddingTop="@dimen/_5pxv"
             android:singleLine="true"
-
-            android:text="@{dhi7VM.dhi7Model.txtThirtyThree}"
-            style="@style/txtSolidRounded_1" tools:text="월"
-            android:background="#90f7f7f7"
+            android:text="월"
+            style="@style/txtSolidRounded_1"
+            android:background="#336b6869"
             android:textColor="#000000"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtyFour"
@@ -113,67 +107,67 @@
             android:paddingStart="@dimen/_9pxh"
             android:paddingTop="@dimen/_5pxv"
             android:singleLine="true"
-            android:text="@{dhi7VM.dhi7Model.txtThirtyFour}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl4"
-            android:background="#90f7f7f7"
-            android:textColor="#000000"/>/>
+            android:text="@string/lbl4"
+            style="@style/txtSolidRounded_1"
+            android:background="#336b6869"
+            android:textColor="#000000"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtyFive"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginBottom="@dimen/_25pxv"
             android:layout_marginStart="@dimen/_8pxh"
-            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_marginTop="@dimen/_27pxv"
             android:layout_weight="0.14"
             android:layout_width="0dp"
             android:lineSpacingExtra="@dimen/_7pxh"
-            android:paddingBottom="@dimen/_4pxv"
+            android:paddingBottom="@dimen/_5pxv"
             android:paddingStart="@dimen/_9pxh"
-            android:paddingTop="@dimen/_6pxv"
+            android:paddingTop="@dimen/_5pxv"
             android:singleLine="true"
-            android:text="@{dhi7VM.dhi7Model.txtThirtyFive}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl3"
-            android:background="#90f7f7f7"
+            android:text="수"
+            style="@style/txtSolidRounded_1"
+            android:background="#336b6869"
             android:textColor="#000000"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtySix"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl5"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginBottom="@dimen/_25pxv"
             android:layout_marginStart="@dimen/_8pxh"
-            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_marginTop="@dimen/_27pxv"
             android:layout_weight="0.14"
             android:layout_width="0dp"
             android:lineSpacingExtra="@dimen/_7pxh"
-            android:paddingBottom="@dimen/_4pxv"
+            android:paddingBottom="@dimen/_5pxv"
             android:paddingStart="@dimen/_9pxh"
-            android:paddingTop="@dimen/_6pxv"
+            android:paddingTop="@dimen/_5pxv"
             android:singleLine="true"
-            android:text="@{dhi7VM.dhi7Model.txtThirtySix}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl5"
-            android:background="#90f7f7f7"
+            android:text="목"
+            android:background="#336b6869"
             android:textColor="#000000"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtySeven"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginBottom="@dimen/_25pxv"
             android:layout_marginStart="@dimen/_8pxh"
-            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_marginTop="@dimen/_27pxv"
             android:layout_weight="0.14"
             android:layout_width="0dp"
             android:lineSpacingExtra="@dimen/_7pxh"
-            android:paddingBottom="@dimen/_4pxv"
+            android:paddingBottom="@dimen/_5pxv"
             android:paddingStart="@dimen/_9pxh"
-            android:paddingTop="@dimen/_6pxv"
+            android:paddingTop="@dimen/_5pxv"
             android:singleLine="true"
-            android:text="@{dhi7VM.dhi7Model.txtThirtySeven}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl6"
-            android:background="#90f7f7f7"
+            android:text="금"
+            style="@style/txtSolidRounded_1"
+            android:background="#336b6869"
             android:textColor="#000000"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtyEight"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginBottom="@dimen/_25pxv"
             android:layout_marginStart="@dimen/_8pxh"
-            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_marginTop="@dimen/_27pxv"
             android:layout_weight="0.14"
             android:layout_width="0dp"
             android:lineSpacingExtra="@dimen/_7pxh"
@@ -181,17 +175,17 @@
             android:paddingStart="@dimen/_9pxh"
             android:paddingTop="@dimen/_5pxv"
             android:singleLine="true"
-            android:text="@{dhi7VM.dhi7Model.txtThirtyEight}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl26"
-            android:background="#90f7f7f7"
+            android:text="토"
+            style="@style/txtSolidRounded_1"
+            android:background="#336b6869"
             android:textColor="#000000"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtyNine"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginBottom="@dimen/_25pxv"
             android:layout_marginEnd="@dimen/_22pxh"
             android:layout_marginStart="@dimen/_8pxh"
-            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_marginTop="@dimen/_27pxv"
             android:layout_weight="0.14"
             android:layout_width="0dp"
             android:lineSpacingExtra="@dimen/_7pxh"
@@ -199,13 +193,44 @@
             android:paddingStart="@dimen/_9pxh"
             android:paddingTop="@dimen/_5pxv"
             android:singleLine="true"
-            android:text="@{dhi7VM.dhi7Model.txtThirtyNine}"
-            style="@style/txtSolidRounded_1" tools:text="@string/lbl27"
-            android:background="#90f7f7f7"
+            android:text="일"
+            style="@style/txtSolidRounded_1"
+            android:background="#336b6869"
             android:textColor="#000000"/>
     </LinearLayout>
 <!--    위 부분은 요일 지정하는 부분. 이 부분을 알람 설정 부분에 추가하면 될 듯?? -->
+<!--
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:checked="false"
+        android:onClick="OnToggleClicked" />
+-->
+    <ImageButton android:id="@+id/imageFortyOne"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/_170pxh"
+        android:layout_width="@dimen/_280pxh"
 
+
+        android:scaleType="fitXY"
+        cornerRadius="@{@dimen/_12pxh}"
+        imageRes="@{@drawable/img_}"
+        tools:ignore="ContentDescription" android:src="@drawable/img_"/>
+
+<!--    뒤로가기 버튼-->
+    <ImageButton android:id="@+id/imageArrowleft"
+        android:layout_height="@dimen/_40pxh"
+        android:layout_marginBottom="@dimen/_20pxv"
+        android:layout_marginStart="@dimen/_15pxh"
+        android:layout_marginTop="@dimen/_5pxv"
+        android:layout_width="@dimen/_30pxh"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_arrowleft"
+        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"
+        android:background="#336b6869" />
 
 </LinearLayout>
 </layout>
