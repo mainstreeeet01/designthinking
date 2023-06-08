@@ -81,7 +81,7 @@
         android:layout_marginStart="@dimen/_12pxh"
         android:layout_marginTop="@dimen/_8pxv"
         android:layout_width="match_parent"
-        android:orientation="horizontal" >
+        android:orientation="horizontal" style="@style/groupStylebluegray_901cornerRadius">
         <TextView android:ellipsize="end"
             android:id="@+id/txtThirtyThree"
             android:layout_height="wrap_content"
