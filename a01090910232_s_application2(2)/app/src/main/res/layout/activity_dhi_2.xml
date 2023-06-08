@@ -24,7 +24,6 @@
             style="@style/groupStylebluegray_901"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_11pxv"
             android:orientation="horizontal">
 
             <ImageView
@@ -68,6 +67,31 @@
                 tools:src="@drawable/img_mail" />
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/txtAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="5dp" />
+
+        <com.github.tlaabs.timetableview.TimetableView
+            android:id="@+id/timetable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:header_title="@array/header_title"/>
+
+        <TextView
+            android:id="@+id/txtAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="알람설정" />
         <LinearLayout
             android:id="@+id/linearColumnlineone"
             style="@style/groupStylegray_701"
@@ -78,7 +102,8 @@
             android:layout_marginEnd="@dimen/_13pxh"
             android:layout_marginBottom="@dimen/_20pxv"
             android:gravity="start"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <FrameLayout
                 android:id="@+id/frameStacklineone"
