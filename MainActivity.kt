@@ -1,5 +1,6 @@
-package com.asapplication.app.modules
+package com.asapplication.app
 
+//import android.R
 import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Intent
@@ -9,8 +10,22 @@ import android.widget.TimePicker
 import android.widget.Toast
 import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
-import com.asapplication.app.R
-import java.util.*
+import com.asapplication.app.appcomponents.base.BaseActivity
+import com.asapplication.app.databinding.LayoutProgressDialogBinding
+import java.util.Calendar
+
+
+//class MainActivity : BaseActivity<LayoutProgressDialogBinding>(R.layout.layout_progress_dialog) {
+
+//    override fun onInitialized() {
+
+//    }
+
+//    override fun setUpClicks() {
+
+//    }
+//}
+
 
 class MainActivity : AppCompatActivity() {
     var alarmTimePicker: TimePicker? = null
@@ -21,8 +36,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         alarmTimePicker = findViewById<View>(R.id.timePicker) as TimePicker
         alarmManager = getSystemService(ALARM_SERVICE) as AlarmManager
-
-//        "@+id/imageArrowleft".setColorFilter(Color.parseColor("#55ff0000"))
     }
 
     // OnToggleClicked() method is implemented the time functionality
@@ -56,5 +69,5 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, "ALARM OFF", Toast.LENGTH_SHORT).show()
         }
     }
-
 }
+

@@ -62,7 +62,7 @@
                 android:singleLine="true"
                 android:text="@{dhi6VM.dhi6Model.txtTwentySix}"
                 style="@style/txtManropesemibold23_1" tools:text="@string/lbl22"/>
-            <ImageButton android:id="@+id/imageGrid"
+            <ImageView android:id="@+id/imageGrid"
                 android:layout_height="@dimen/_27pxh"
                 android:layout_marginBottom="@dimen/_14pxv"
                 android:layout_marginEnd="@dimen/_11pxh"
