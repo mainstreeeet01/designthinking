@@ -11,12 +11,15 @@ import android.location.LocationManager
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.core.app.ActivityCompat
 import com.asapplication.app.R
 import com.asapplication.app.appcomponents.base.BaseActivity
 import com.asapplication.app.databinding.ActivityDhi9Binding
+import com.asapplication.app.modules.dhi10.ui.Dhi10Activity
+import com.asapplication.app.modules.dhi11.ui.Dhi11Activity
 import com.asapplication.app.modules.dhi9.data.viewmodel.Dhi9VM
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
@@ -28,8 +31,14 @@ class Dhi9Activity : BaseActivity<ActivityDhi9Binding>(R.layout.activity_dhi_9) 
     private val viewModel: Dhi9VM by viewModels()
 
     private lateinit var fusedLocationClient: FusedLocationProviderClient
-    private var preLati = 0L
-    private var preLong = 0L
+    private var preLati: Double = 0.0
+    private var preLong: Double = 0.0
+    private var preLati1: Double = 0.0
+    private var preLong1: Double = 0.0
+
+    private var title: String? = null
+    private var button: String? = null
+    private var end: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
@@ -65,10 +74,10 @@ class Dhi9Activity : BaseActivity<ActivityDhi9Binding>(R.layout.activity_dhi_9) 
             fusedLocationClient.lastLocation.addOnSuccessListener {
 //                val curPosition = MapPoint.mapPointWithGeoCoord(it.latitude, -it.longitude)
                 val curPosition = MapPoint.mapPointWithGeoCoord(37.2429616, 127.0800525)
-                preLati = curPosition.mapPointGeoCoord.latitude.toLong()
-                preLong = curPosition.mapPointGeoCoord.longitude.toLong()
+                preLati = curPosition.mapPointGeoCoord.latitude
+                preLong = curPosition.mapPointGeoCoord.longitude
 
-                binding.mapView.apply {
+                binding.mapView.run {
                     setMapCenterPoint(curPosition, true)
                     setZoomLevel(3, true)
                     setMapCenterPointAndZoomLevel(curPosition, 3, true)
@@ -106,11 +115,19 @@ class Dhi9Activity : BaseActivity<ActivityDhi9Binding>(R.layout.activity_dhi_9) 
                         override fun onDraggablePOIItemMoved(p0: MapView?, p1: MapPOIItem?, p2: MapPoint?) {
                             Log.d("aaa", "onDraggablePOIItemMoved ${p2?.mapPointGeoCoord?.latitude} ${p2?.mapPointGeoCoord?.longitude}")
                             p2?.mapPointGeoCoord?.latitude?.let {
-                                preLati = it.toLong()
+                                if (end) {
+                                    preLati = it
+                                } else {
+                                    preLati1 = it
+                                }
                             }
 
                             p2?.mapPointGeoCoord?.longitude?.let {
-                                preLong = it.toLong()
+                                if (end) {
+                                    preLong = it
+                                } else {
+                                    preLong1 = it
+                                }
                             }
                         }
                     })
@@ -123,6 +140,13 @@ class Dhi9Activity : BaseActivity<ActivityDhi9Binding>(R.layout.activity_dhi_9) 
 
     override fun onInitialized() {
         binding.dhi9VM = viewModel
+        title = intent.getStringExtra(TITLE_KEY)
+        button = intent.getStringExtra(BUTTON_KEY)
+        end = intent.getBooleanExtra(END_KEY, false)
+
+        binding.txtFiftySeven.text = title
+        binding.btn.text = button
+
         reqPoint()
     }
 
@@ -130,18 +154,53 @@ class Dhi9Activity : BaseActivity<ActivityDhi9Binding>(R.layout.activity_dhi_9) 
         binding.imageArrowleft.setOnClickListener {
             finish()
         }
+        binding.imageVector.setOnClickListener {
+            finish()
+        }
 
         binding.btn.setOnClickListener {
             Log.d("aaa", "setUpClicks: preLong $preLong preLati $preLati")
-//            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=net.daum.android.map")))
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("kakaomap://route?sp=37.537229,127.005515&ep=37.4979502,127.0276368&by=FOOT")))
+            if (end) {
+                Log.d("a", "${preLati1},${preLong1}&ep=${preLati},${preLong}")
+                startActivityForResult(Intent(Intent.ACTION_VIEW, Uri.parse("kakaomap://route?sp=${preLati1},${preLong1}&ep=${preLati},${preLong}&by=FOOT")), 0)
+            } else {
+                binding.txtFiftySeven.text = "도착위치"
+                binding.btn.text = "도착 위치 지정"
+                binding.mapView.run {
+                    removeAllPOIItems()
+                    addPOIItem(
+                        MapPOIItem().apply {
+                            itemName = "도착위치"
+                            tag = 0
+                            mapPoint = MapPoint.mapPointWithGeoCoord(37.2429616, 127.0800525)
+                            markerType = MapPOIItem.MarkerType.BluePin
+//                            selectedMarkerType = MapPOIItem.MarkerType.RedPin
+                            isDraggable = true
+                        }
+                    )
+                }
+                end = true
+            }
         }
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        startActivity(Intent(this, Dhi11Activity::class.java))
+        finish()
+    }
+
     companion object {
-        fun getIntent(context: Context, bundle: Bundle?): Intent {
+
+        const val TITLE_KEY = "title"
+        const val BUTTON_KEY = "button"
+        const val END_KEY = "end"
+
+        fun getIntent(context: Context, title: String?, buttonTitle: String?, isEnd: Boolean): Intent {
             val destIntent = Intent(context, Dhi9Activity::class.java)
-            destIntent.putExtra("bundle", bundle)
+            destIntent.putExtra(TITLE_KEY, title)
+            destIntent.putExtra(BUTTON_KEY, buttonTitle)
+            destIntent.putExtra(END_KEY, isEnd)
             return destIntent
         }
     }

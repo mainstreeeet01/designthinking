@@ -92,7 +92,7 @@
             android:paddingEnd="@dimen/_30pxh"
             android:paddingBottom="@dimen/_23pxv"
             android:singleLine="true"
-            android:text="@string/lbl28"
+            android:text="출발 위치 지정"
             android:textAllCaps="false"
             tools:text="@string/lbl28" />
     </LinearLayout>
