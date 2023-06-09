@@ -10,19 +10,26 @@ import android.widget.Toast
 import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
 import com.asapplication.app.R
+import com.asapplication.app.appcomponents.base.BaseActivity
+import com.asapplication.app.databinding.ActivityMainBinding
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
     var alarmTimePicker: TimePicker? = null
     var pendingIntent: PendingIntent? = null
     var alarmManager: AlarmManager? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
         alarmTimePicker = findViewById<View>(R.id.timePicker) as TimePicker
         alarmManager = getSystemService(ALARM_SERVICE) as AlarmManager
 
 //        "@+id/imageArrowleft".setColorFilter(Color.parseColor("#55ff0000"))
+    }
+
+    override fun setUpClicks() {
+        binding.imageArrowleft.setOnClickListener {
+            finish()
+        }
     }
 
     // OnToggleClicked() method is implemented the time functionality

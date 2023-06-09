@@ -46,6 +46,7 @@ android {
 
 dependencies {
     implementation files('libs/libDaumMapAndroid.jar')
+    implementation 'com.github.tlaabs:TimetableView:1.0.3-fx1'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.9.0'

@@ -67,6 +67,10 @@
             android:name="com.asapplication.app.modules.MainActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name="com.asapplication.app.modules.EditActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
